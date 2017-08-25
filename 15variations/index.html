@@ -1,248 +1,436 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Index page</title>
+    
     <script src="assets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
     <script src="assets/js/main.js" charset="utf-8"></script>
-    <style media="screen">
+
+   <style media="screen">
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
         }
+       
+       body{
+           background: rgb(61,60,60);
+           font-family:times;
+       }
+       
+       .body-container{
+           width:100%;
+           height:100vh;
+       }
         
-        .body-container {
-            width: 100%;
-            height: 100vh;
-            margin: 0 auto;
-            font-family: times;
-        }
-        
-        .hero-container {
-            width: 80%;
-            margin-left: 15%;
-            margin-right: 10%;
-            margin-top: 8%;
-        }
-        /*
-       .home-circle{
-           width:35px;
-           height:35px;
-           border-radius: 50%;
-           background:black;
+       
+/*      top container */
+       
+        .top-container{
+            width:100%;
+            height:100vh;
+            top:0;
+            position:fixed;
+            padding-top:50px;
+            color:rgb(255,240,231);
+            
+       }
+       
+       .header-container{
+           display:flex;
+           justify-content: space-between;
+           font-size:1.2em;
+       }
+       
+       
+       .leftheader{
+           margin-left:50px;
+       }
+       
+       .rightheader{
+           margin-right:50px;
+       }
+       
+       .intro-container{
+           width:50%;
+           height:500px;
+           margin:0 auto;
+           margin-top:150px;
+           font-size:1.9em;
+           line-height: 15px;
+           padding-top:10%;
+            
+       }
+       
+       .intro-container:hover{
+           line-height: normal;
+           padding-top:0;
            
        }
-*/
-        /*       intro-container*/
-        
-        .intro-container {
-            width: 80%;
-            top: 0;
-            max-width: 700px;
-        }
-        
-        p {
-            font-size: 26px;
-        }
-        /*       bottomnav-container*/
-        
-        .bottomnav-container {
-            width: 80%;
-            bottom: 150px;
-            position: fixed;
-            display: flex;
-            justify-content: flex-start;
-            color: rgb(210, 35, 42);
-            font-size: 60px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-        
-        .nav-one {}
-        
-        .nav-one:hover {
-            font-style: italic;
-            color: black;
-        }
-        
-        .nav-two {}
-        
-        .nav-two:hover {
-            font-style: italic;
-            color: black;
-        }
-        
-        .nav-three {}
-        
-        .nav-three:hover {
-            font-style: italic;
-            color: black;
-        }
-        
-        .nav-four {}
-        
-        .nav-four:hover {
-            font-style: italic;
-            color: black;
-        }
-        
-        .nav-five {}
-        
-        .nav-five:hover {
-            font-style: italic;
-            color: black;
-        }
-        
-        .arrow {
-            font-size: 50px;
-            color: black;
-            padding-top: 1%;
-        }
-        /*       middlenav-container*/
-        
-        .middlenav-container {
-            width: 100%;
+       
+       .footer-container{
+           display:flex;
+           justify-content: space-between;
+           font-size:1.2em;
+           font-size:3em;
+           position:absolute;
+           margin-left:50px;
+       }
+       
+/*       end of top container*/
+       
+/*       bottom container*/
+       
+       .bottom-container{
+            background: rgb(255,240,231);
+            width:100%;
+            height:100vh;
+            top:1000px;
+            padding-top:50px;
+            position:absolute;
+            color:rgb(61,60,60);
+           
+       }
+       
+/*       index numbers*/
+       
+       .number-container{
+            width:100%;
             display: flex;
             justify-content: center;
-            font-size: 200px;
-        }
-        
-        .la {}
-        
-        .lb {}
-        
-        .lc {}
-        /*       one a b c*/
-        
-        .title-one {
-            display: none;
-        }
-        
-        .title-one.showme {
-            display: block;
-        }
-        
-        .one-a {}
-        
-        .one-b {}
-        
-        .one-c {}
-        /*       two a b c*/
-        
-        .title-two {
-            display: none;
-        }
-        
-        .title-two.showme {
-            display: block;
-        }
-        
-        .two-a {}
-        
-        .two-b {}
-        
-        .two-c {}
-        /*       three a b c*/
-        
-        .title-three {
-            display: none;
-        }
-        
-        .title-three.showme {
-            display: block;
-        }
-        
-        .three-a {}
-        
-        .three-b {}
-        
-        .three-c {}
-        /*       four a b c*/
-        
-        .title-four {
-            display: none;
-        }
-        
-        .title-four.showme {
-            display: block;
-        }
-        
-        .four-a {}
-        
-        .four-b {}
-        
-        .four-c {}
-        /*       five a b c*/
-        
-        .title-five {
-            display: none;
-        }
-        
-        .title-five.showme {
-            display: block;
-        }
-        
-        .five-a {}
-        
-        .five-b {}
-        
-        .five-c {}
+            position:absolute;
+            font-weight:bold;
+            top:15vh;
+            z-index: 100;
+       }
+       
+       .number-box{
+            width:150px;
+            height:250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:6em;
+       }
+       
+        .number-box:hover{
+            transform:rotate(270deg);
+       }
+       
+       .no1 {}
+       .no2 {}
+       .no3 {}
+       .no4 {}
+       .no5 {}
+       
+       
+       .no1.showme{
+           transform:rotate(270deg);
+       }
+       
+       .no2.showme{
+           transform:rotate(270deg);
+       }
+       
+       .no3.showme{
+           transform:rotate(270deg);
+       }
+       
+       .no4.showme{
+           transform:rotate(270deg);
+       }
+       
+       .no5.showme{
+           transform:rotate(270deg);
+       }
+       
+/*       contents container*/
+       
+       .contents-container{
+           width:100%;
+           height:60vh;
+           margin-top:40vh;
+           display: flex;
+           justify-content: center;
+           position: absolute;
+           top:0;
+       }
+       
+       .one{
+          opacity: 0;
+           z-index: 0;
+       }
+       
+       .one.showme{
+           opacity:1;
+           background:rgb(255,240,231);
+           z-index: 1;
+       }
+       
+       .two{
+           opacity: 0;
+           z-index: 0;
+       }
+       
+       .two.showme{
+           opacity:1;
+           background:rgb(255,240,231);
+           z-index: 1;
+       }
+       
+       .three{
+           opacity: 0;
+           z-index: 0;
+       }
+       
+        .three.showme{
+           opacity: 1;
+            background:rgb(255,240,231);
+            z-index: 1;
+       }
+       
+       .four{
+           opacity: 0;
+           z-index: 0;
+       }
+       
+        .four.showme{
+           opacity: 1;
+            background:rgb(255,240,231);
+            z-index: 1;
+       }
+       
+       .five{
+           opacity: 0;
+           z-index: 0;
+       }
+       
+       .five.showme{
+           opacity: 1;
+           background:rgb(255,240,231);
+           z-index: 1;
+       }
+       
+        .levelname{
+           font-weight: bold;
+           font-size:1.9em;
+           line-height: 1em;
+           margin-top:25.5px;
+           margin-left:-3px; 
+       }
+       
+       .line{
+           font-weight: bold;
+           font-size:1.9em;
+       }
+       
+        .poem-container{
+            width:40%;
+            height:100%;
+            top:0;
+            margin-left:2%;
+            position:relative;
+            color:rgb(61,60,60);
+            overflow:scroll;
+            padding-top:25px;
+            font-size:1.8em;
+            padding-bottom: 5%;
+            line-height: 15px;
+       }
+       
+       .poem-container:hover{
+           line-height: normal;
+       }
+       
+       .image-container{
+            width:40%;
+            height:100%;
+            top:0;
+            margin-left:2%;
+            position:relative;
+            color:rgb(61,60,60);
+            overflow:scroll;
+            padding-top:25px;
+       }
+       
+       .photo{
+           width:100%;
+            padding-bottom:30px;
+           opacity:0.5;
+       }
+       
+       .photo:hover{
+          opacity:1;
+       }
+       
+/*       end of bottom container*/
+       
     </style>
-</head>
+  </head>
+  <body>
+      <div class="body-container">
+          <div class="top-container">
+             <div class="header-container">
+                 <div class="leftheader">Brooke Page</div>
+                 <div class="rightheader">D-Pub</div>
+             </div><!-- end of header-container -->
+             <div class="intro-container">
+                 <p>"Used to be that if you wanted to be subversive and radical, you'd publish on the web, bypassing all those arcane publishing structures at no cost." <em>Kenneth Goldsmith, If It Doesn't Exist on the Internet, It Doesn't Exist.</em> This unit will reclaim the subversive, the radical and the handmade web. It will require you to consider the influence of media and technology on our lives and how publishing adapts to the new speed and the constant change. It considers the relationship between print and digital layout processes and will explore methods of design thinking for digital publishing, through the use of technology and concepts.</p>
+             </div>
+             <div class="footer-container">&darr;</div>
+          </div><!-- end of top-container -->
+          
+          <div class="bottom-container">
+             <div class="header-container">
+                 <div class="leftheader">Brooke Page</div>
+                 <div class="rightheader">D-Pub</div>
+             </div><!-- end of header-container -->
+             <div class="number-container">
+                 <div class="number-box no1">1</div>
+                 <div class="number-box no2">2</div>
+                 <div class="number-box no3">3</div>
+                 <div class="number-box no4">4</div>
+                 <div class="number-box no5">5</div>
+             </div>
+             <!-- end of number-container -->
+            
+             <div class="contents-container one">
+                    <div class="line">___________</div>
+                    <div class="levelname">Level 1<br>only using<br><em>html</em> (no<em> css</em>)
+                    </div>
+                    <div class="image-container">
+                       <a href="level1a.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level1a.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level1b.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level1b.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level1c.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level1c.png" alt="">
+                           </figure>
+                        </a>
+                    </div>
+              </div>
+              <!-- end of contents-container one-->
+              
+               <div class="contents-container two">
+                    <div class="line">___________</div>
+                    <div class="levelname">Level 2<br>only using<br><em>html</em> (no<em> css</em>)
+                    </div>
+                    <div class="image-container">
+                        <a href="level2a.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level2a.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level2b.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level2b.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level2c.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level2c.png" alt="">
+                           </figure>
+                        </a>
+                    </div>
+              </div>  
+              <!-- end of contents-container two -->
+              
+               <div class="contents-container three">
+                    <div class="line">___________</div>
+                    <div class="levelname">Level 3<br>using both<br><em>html</em> and<em> css<br></em>elements for<br>positioning
+                    </div>
+                    <div class="image-container">
+                        <a href="level3a.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level3a.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level3b.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level3b.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level3c.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level3c.png" alt="">
+                           </figure>
+                        </a>
+                    </div>
+              </div>  
+              <!-- end of contents-container three -->
+              
+              <div class="contents-container four">
+                    <div class="line">___________</div>
+                    <div class="levelname">Level 4<br>using both<br><em>html</em> or<em> css<br></em>elements for<br>typography
+                    </div>
+                    <div class="image-container">
+                        <a href="level4a.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level4a.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level4b.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level4b.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level4c.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level4c.png" alt="">
+                           </figure>
+                        </a>
+                    </div>
+              </div>  
+              <!-- end of contents-container four -->
+              
+              <div class="contents-container five">
+                    <div class="line">___________</div>
+                    <div class="levelname">Level 5<br>using any<br><em>html</em> or<em> css<br></em>element
+                    </div>
+                    <div class="image-container">
+                        <a href="level5a.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level5a.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level5b.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level5b.png" alt="">
+                           </figure>
+                        </a>
+                        <a href="level5c.html">
+                           <figure>
+                                <img class="photo" src="assets/images/level5c.png" alt="">
+                           </figure>
+                        </a>
+                    </div>
+              </div>  
+              <!-- end of contents-container five -->
+              
+              <div class="contents-container">
+                    <div class="line">___________</div>
+                    <div class="levelname">Manifesto:<br>Joseph Beuys<br><em>Everyone Is<br>
+                    An Artist</em>
+                    </div>
+                    <div class="poem-container">
+                       <p>Let yourself fall. Learn to observe snails. Plant impossible gardens. Let someone dangerous in for tea. Make small signs that say “yes” and spread them all over your house. Become a friend of freedom and uncertainty. Look forward to dreaming. Cry at the movies. Swing as high as you can on a swing at moonlight. Maintain different moods. Refuse to be “responsible”. Do it out of love. Pass on money. Do it now. The money will follow. Laugh a lot. Bathe in the moonlight. Dream wild, imaginative dreams. Draw on the walls. Read every day. Imagine you are enchanted. Giggle with children. Listen to old people. Open yourself. Dive in. Be free. Praise Yourself. Let go of fear. Play with everything. Preserve the child in you. You are innocent. Build a castle of covers.Get wet. Hug trees. Write love letters.</p>
+                    </div>
+              </div>
+              <!-- end of contents-container -->
+              
+          </div> <!-- end of bottom-container -->
+                 
+      </div><!-- end of body-container -->
 
-<body>
-    <div class="body-container">
-        <div class="hero-container">
-            <div class="bottomnav-container">
-                <div class="arrow">&#10230;&nbsp &nbsp</div>
-                <div class="nav-one">one</div>
-                <div class="nav-two">two</div>
-                <div class="nav-three">three</div>
-                <div class="nav-four">four</div>
-                <div class="nav-five">five</div>
-            </div>
-            <!-- end of bottomnav-container -->
-            <div class="middlenav-container">
-                <div class="title-one">
-                    <div class="one-a la">a</div>
-                    <div class="one-b lb">b</div>
-                    <div class="one-c lc">c</div>
-                </div>
-                <div class="title-two">
-                    <div class="two-a la">a</div>
-                    <div class="two-b lb">b</div>
-                    <div class="two-c lc">c</div>
-                </div>
-                <div class="title-three">
-                    <div class="three-a la">a</div>
-                    <div class="three-b lb">b</div>
-                    <div class="three-c lc">c</div>
-                </div>
-                <div class="title-four">
-                    <div class="four-a la">a</div>
-                    <div class="four-b lb">b</div>
-                    <div class="four-c lc">c</div>
-                </div>
-                <div class="title-five">
-                    <div class="five-a la">a</div>
-                    <div class="five-b lb">b</div>
-                    <div class="five-c lc">c</div>
-                </div>
-            </div>
-            <!-- end of middlenav-container -->
-            <div class="intro-container">
-                <p> <em>Used to be that if you wanted to be subversive and radical, you'd publish on the web, bypassing all those arcane publishing structures at no cost. </em>
-                    <br>– Kenneth Goldsmith, If It Doesn't Exist on the Internet, It Doesn't Exist
-                    <br>
-                    <br> This unit will reclaim the subversive, the radical and the handmade web. It will require you to consider the influence of media and technology on our lives and how publishing adapts to the new speed and the constant change. It considers the relationship between print and digital layout processes and will explore methods of design thinking for digital publishing, through the use of technology and concepts.</p>
-            </div>
-            <!-- end of intro-container -->
-        </div>
-        <!-- end of hero-container -->
-    </div>
-    <!-- end of body-container -->
-</body>
 
+  </body>
 </html>
+
