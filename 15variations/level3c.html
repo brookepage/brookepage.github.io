@@ -4,83 +4,168 @@
     <meta charset="utf-8">
     <title>Level 3c</title>
     <style>
+        
+         body{
+              width: 100%;
+              height: 100vh;
+              margin: 0 auto;
+         }
 
-    body{
-      width: 100%;
-      height: 1000px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
 
-    div.author{
-      position: absolute;
-      width:100%;
-    }
+         .body-container{
+/*            background: red;*/
+            width:90%;
+            height:90vh;
+            top:10vh;
+            left:5%;
+            position:absolute;
+             
+        }
+        
+        .block1{
+/*            background: blue;*/
+            width:45%;
+            height:50vh;
+            display:inline-block;
+            float: left;
+            margin-top:15vh;
+            padding-right:px;
+        }
+        
+        .block2{
+/*            background: yellow;*/
+            width:45%;
+            height:50vh;
+            display:inline-block;
+            margin-top:15vh;
+            float:right;
+            
+        }
+        
+        .title{
+/*            background: red;*/
+            position:fixed;
+            height:50vh;
+            left:56%;
+            margin-top:10vh;
+            transform: rotate(270deg)
+            
+        }
+        
+        .circle1{
+           background: black;
+           width:50px;
+           height:50px;
+           border-radius:50%;
+            position: absolute;
+            top:5%;
+            left:20%;
+            
+        }
+        
+        .circle2{
+           background: black;
+           width:50px;
+           height:50px;
+           border-radius:50%;
+            position: absolute;
+            top:5%;
+            left:75%;
+          
+        }
+        
+        .circle3{
+           background: black;
+           width:50px;
+           height:50px;
+           border-radius:50%;
+            position: absolute;
+            top:70%;
+            left:20%;
+            
+        }
+        
+        .circle4{
+           background: black;
+           width:50px;
+           height:50px;
+           border-radius:50%;
+            position: absolute;
+            top:70%;
+            left:75%;
+          
+        }
+        
+        
+        #block1 {
+            display: none;
+        }
+        
+        #block1:target {
+            display: inline-block;
+        }
+        
+        #block2 {
+            display: none;
+        }
+        
+        #block2:target {
+            display: inline-block;
+        }
 
-    div.title{
-      position: absolute;
-      width:100%;
-    }
-
-    div.poem{
-      position: absolute;
-      width:100%;
-    }
-
-    .position{
-      position: absolute;
-    }
-
-    .htop{
-      margin-left: 420px;
-      margin-top: 203px;
-    }
-
-    .hbottom{
-      position: absolute;
-      margin-left: 419px;
-      margin-top: 562px;
-    }
-
-    .subleft{
-      text-align: right;
-      margin-left:325px;
-      margin-top:385px;
-    }
-
-    .subright{
-      margin-left:785px;
-      margin-top:385px;
-    }
-
-    .para{
-      width:350px;
-      height:320px;
-      margin-left: 420px;
-      margin-top: 250px;
-      padding-top: 20px;
-      padding-bottom: 8px;
-      background:white;
-    }
+        
+        h1{
+            color: black;
+            text-shadow: -2px -2px 0 #fff, 1px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+        }
+        
+        a{
+            color:black;
+        }
+    
 
     </style>
   </head>
   <body>
-    <div class="author">
-      <div class="htop position"><h1>Joseph Joseph Joseph Jo</h1></div>
-      <div class="hbottom position"><h1>Beuys Beuys Beuys Beuy</h1></div>
-    </div>
-
-    <div class="poem">
-      <div class="para position">“Let yourself fall. Learn to observe snails. Plant impossible gardens. Let someone dangerous in for tea. Make small signs that say “yes” and spread them all over your house. Become a friend of freedom and uncertainty. Look forward to dreaming. Cry at the movies. Swing as high as you can on a swing at moonlight. Maintain different moods. Refuse to be “responsible”. Do it out of love. Take a lot of naps. Pass on money. Do it now. The money will follow. Laugh a lot. Bathe in the moonlight. Dream wild, imaginative dreams. Draw on the walls. Read every day. Imagine you are enchanted. Giggle with children. Listen to old people. Open yourself. Dive in. Be free. Praise Yourself. Let go of fear. Play with everything. Preserve the child in you. You are innocent. Build a castle of covers. Get wet. Hug trees. Write love letters.”
+  
+  <div class="body-container">
+     
+     <div class="title"><em>Joseph Beuys / Everyone Is An Artist</em></div>
+     
+     <a href="#block1">
+          <div class="circle1"></div>
+      </a>
+      
+      <a href="#block2">
+          <div class="circle2"></div>
+      </a>
+      
+      <a href="#block1">
+          <div class="circle3"></div>
+      </a>
+      
+      <a href="#block2">
+          <div class="circle4"></div>
+      </a>
+      
+      <div class="block1">
+         <a href="">
+              <h1 id="block1">“Let yourself fall. Learn to observe snails. Plant impossible gardens. Let someone dangerous in for tea. Make small signs that say “yes” and spread them all over your house. Become a friend of freedom and uncertainty. Look forward to dreaming. Cry at the movies. Swing as high as you can on a swing at moonlight. Maintain different moods. Refuse to be “responsible”. Do it out of love. Take a lot of naps. Pass on money. </h1></a>
       </div>
-    </div>
+      <div class="block2">
+          <a href="">
+              <h1 id="block2">Do it now. The money will follow. Laugh a lot. Bathe in the moonlight. Dream wild, imaginative dreams. Draw on the walls. Read every day. Imagine you are enchanted. Giggle with children. Listen to old people. Open yourself. Dive in. Be free. Praise Yourself. Let go of fear. Play with everything. Preserve the child in you. You are innocent. Build a castle of covers. Get wet. Hug trees. Write love letters.”</h1>
+          </a>
+      </div>
 
-    <div class="title">
-      <h3 class="subleft position">Everyone<br>Is An<br>Artist</h3>
-      <h3 class="subright position">Everyone<br>Is An<br>Artist</h3>
-    </div>
-
+  </div>
+  
+  
 
   </body>
 </html>
+
+
+
+
+<!---->
