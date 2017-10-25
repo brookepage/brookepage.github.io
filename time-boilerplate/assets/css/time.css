@@ -1,0 +1,129 @@
+/* Note target the body first with the modifer.
+For example, every evenSecond change the div color to blue.
+Every oddSecond change the div color to red
+
+body.evenS .time {
+  color:blue;
+}
+
+body.oddS .time {
+  color:red;
+}
+
+Target multiple together. Every evenSecond only in the evening, display an image.
+
+body.evenS.pm .sunset {
+  display:block;
+}
+
+*/
+
+
+/* Time CSS here */
+
+body.evenS .time{
+}
+
+/*wave height*/
+
+body.h6.am .bottom_wave{
+    height:0vh;
+}
+
+body.h7.am .bottom_wave{
+    height:7vh;
+}
+
+body.h8.am .bottom_wave{
+    height:14vh;
+}
+
+body.h9.am .bottom_wave{
+    height:21vh;
+}
+
+body.h10.am .bottom_wave{
+    height:28vh;
+}
+
+body.h11.am .bottom_wave{
+    height:35vh;
+}
+
+body.h12.pm .bottom_wave{
+    height:42vh;
+}
+
+body.h1.pm .bottom_wave {
+    height:49vh;
+}
+
+body.h2.pm .bottom_wave{
+    height:56vh;
+}
+
+body.h3.pm .bottom_wave{
+    height:63vh;
+}
+
+body.h4.pm .bottom_wave{
+    height:70vh;
+}
+
+body.h5.pm .bottom_wave{
+    height:77vh;
+}
+
+body.h6.pm .bottom_wave{
+    height:84vh;
+}
+
+body.h7.pm .bottom_wave{
+    height:91vh;
+}
+
+body.h8.pm .bottom_wave, body.h9.pm .bottom_wave, body.h10.pm .bottom_wave, body.h11.pm .bottom_wave, body.h12.am .bottom_wave, body.h1.am .bottom_wave, body.h2.am .bottom_wave, body.h3.am .bottom_wave, body.h4.am .bottom_wave, body.h5.am .bottom_wave{
+    height:100vh;
+}
+
+/*end phase 5 swap night*/
+
+body.h8.pm #night, body.h9.pm #night, body.h10.pm #night, body.h11.pm #night, body.h12.am #night, body.h1.am #night, body.h2.am #night, body.h3.am #night, body.h4.am #night, body.h5.am #night {
+    display: flex;
+} 
+
+body.h8.pm #day, body.h9.pm #day, body.h10.pm #day, body.h11.pm #day, body.h12.am #day, body.h1.am #day, body.h2.am #day, body.h3.am #day, body.h4.am #day, body.h5.am #day {
+    display: none;
+} 
+
+/*end phase 5 swap day*/
+
+body.h6.am #day, body.h7.am #day, body.h8.am #day, body.h9.am #day, body.h10.am #day, body.h11.am #day, body.h12.pm #day, body.h1.pm #day, body.h2.pm #day, body.h3.pm #day, body.h4.pm #day, body.h5.pm #day, body.h6.pm #day, body.h7.pm #day {
+    display: flex;
+}
+
+body.h6.am #night, body.h7.am #night, body.h8.am #night, body.h9.am #night, body.h10.am #night, body.h11.am #night, body.h12.pm #night, body.h1.pm #night, body.h2.pm #night, body.h3.pm #night, body.h4.pm #night, body.h5.pm #night, body.h6.pm #night, body.h7.pm #night {
+    display: none;
+}
+
+/*end message swap day*/
+
+body.h6.am .message_swap .night, body.h7.am .message_swap .night, body.h8.am .message_swap .night, body.h9.am .message_swap .night, body.h10.am .message_swap .night, body.h11.am .message_swap .night, body.h12.pm .message_swap .night, body.h1.pm .message_swap .night, body.h2.pm .message_swap .night, body.h3.pm .message_swap .night, body.h4.pm .message_swap .night, body.h5.pm .message_swap .night, body.h6.pm .message_swap .night, body.h7.pm .message_swap .night{
+    display: none;
+}
+
+body.h6.am .message_swap .day, body.h7.am .message_swap .day, body.h8.am .message_swap .day, body.h9.am .message_swap .day, body.h10.am .message_swap .day, body.h11.am .message_swap .day, body.h12.pm .message_swap .day, body.h1.pm .message_swap .day, body.h2.pm .message_swap .day, body.h3.pm .message_swap .day, body.h4.pm .message_swap .day, body.h5.pm .message_swap .day, body.h6.pm .message_swap .day, body.h7.pm .message_swap .day{
+    display: block;
+}
+
+/*end message swap night*/
+
+body.h12.am .message_swap .night, 
+body.h1.am .message_swap .night, body.h2.am .message_swap .night, body.h3.am .message_swap .night, body.h4.am .message_swap .night, body.h5.am .message_swap .night, body.h8.pm .message_swap .night, body.h9.pm .message_swap .night, body.h10.pm .message_swap .night, body.h11.pm .message_swap .night {
+    display: block;
+}
+
+body.h12.am .message_swap .day, 
+body.h1.am .message_swap .day, body.h2.am .message_swap .day, body.h3.am .message_swap .day, body.h4.am .message_swap .day, body.h5.am .message_swap .day, body.h8.pm .message_swap .day, body.h9.pm .message_swap .day, body.h10.pm .message_swap .day, body.h11.pm .message_swap .day {
+    display: none;
+}

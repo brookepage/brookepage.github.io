@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <!-- Require these to reset browser styles and debugging -->
+    <link rel="stylesheet" href="assets/css/_normalize.css">
+    <link rel="stylesheet" href="assets/css/_debug.css">
+
+    <!-- Add custom styles here -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/time.css">
+
+    <!-- Require these for JS -->
+    <script src="assets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/moment-with-locales.min.js" charset="utf-8"></script>
+    <script src="assets/js/time.js" charset="utf-8"></script>
+
+    <!-- Add custom JS here -->
+    <script src="assets/js/main.js" charset="utf-8"></script>
+    
+    <!-- fonts -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    <!-- Start here -->
+    
+<div class="body_center">
+   
+     <div class="phase1-container">
+       <div class="title">GOT<br>SUN?</div>
+     </div> <!-- end of phase 1 -->
+     
+     <div class="phase2-container">  
+        <div class="background blue_ani"></div>
+        <div class="circle_1 circle_ani">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+            <circle fill="#EE3232" cx="512" cy="383" r="292.8"/>
+            </svg>
+        </div> 
+       
+        <img class="binoculars bino_ani" src="assets/images/bino.svg" alt="">
+    </div> <!-- end of phase 2 -->
+    
+    <div class="phase3-container">
+        <img class="hand2 hand2_ani"  src="assets/images/hand2.svg" alt="">
+        <img class="sun2 sun2_ani"  src="assets/images/sun2.svg" alt="">
+    </div> <!-- end of phase 3 -->
+    
+    <div id="day" class="phase5-container">
+       <div class="background bgColor_ani"></div>
+        <div class="circle_3 circleAppear_ani">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+            <circle fill="#EE3231" cx="512" cy="383" r="292.8"/>
+            </svg>
+        </div>
+        <img class="thumbsUp thumb_ani" src="assets/images/thumbsup.svg" alt="">
+        <div class="message sun message_ani">
+            You've<br>got sun<br><br><br><br>
+        </div>
+    </div>  
+           
+    <div id="night" class="phase5-container">
+       <div class="background bgColor_ani"></div>
+        <div class="circle_3 circleAppear_ani">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+            <circle fill="#EAE0BE" cx="512" cy="383" r="292.8"/>
+            </svg>
+        </div>
+        <img class="clouds cloud_ani" src="assets/images/clouds.svg" alt="">
+        <div class="message nosun message_ani">
+            No sun<br><br><br><br><br>
+        </div>
+    </div> <!-- end of phase 5 -->
+    
+    <div class="phase4-container"> 
+        <div class="circle_2 whiteCircle_ani">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+            <circle fill="#EBE1BF" cx="512" cy="383" r="292.8"/>
+            </svg>
+        </div>
+        
+        <div class="wave_container wave_ani">
+            <img class="hand_wave"  src="assets/images/handwave.svg" alt="">
+             <div class="bottom_wave"></div>
+        </div>
+       
+    </div> <!-- end of phase 4 -->
+    
+    <div class="phase6-container">
+        <div class="final_page final_ani">
+            <div class="final_text">Your time is</div>
+            <div class="final_time time"></div>
+            
+            <div class="message_swap">
+                <span class="day">Go enjoy the sun!</span>
+                <span class="night">No sun, keep napping...</span>
+            </div>
+            
+        </div>
+    </div>
+    
+</div> <!-- end of body_center -->
+
+  </body>
+</html>
