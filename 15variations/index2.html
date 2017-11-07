@@ -15,25 +15,28 @@
         }
        
        body{
-           background: rgb(61,60,60);
+           background: red;
            font-family:times;
+/*           rgb(61,60,60)*/
        }
        
        .body-container{
            width:100%;
            height:100vh;
+           padding-left:5%;
+           padding-right:5%;
        }
         
        
 /*      top container */
        
         .top-container{
-            width:100%;
+            width:90%;
             height:100vh;
             top:0;
             position:fixed;
             padding-top:50px;
-            color:rgb(255,240,231);
+            color:floralwhite;
             
        }
        
@@ -41,16 +44,16 @@
            display:flex;
            justify-content: space-between;
            font-size:1.2em;
+           width:100%;
        }
        
-       
-       .leftheader{
-           margin-left:50px;
+       .uline{
+           border-bottom: 2px solid floralwhite;
+           padding-bottom:5px;   
        }
        
-       .rightheader{
-           margin-right:50px;
-       }
+       .leftheader{}
+       .rightheader{}
        
        .intro-container{
            width:50%;
@@ -60,7 +63,6 @@
            font-size:1.9em;
            line-height: 15px;
            padding-top:10%;
-            
        }
        
        .intro-container:hover{
@@ -70,12 +72,10 @@
        }
        
        .footer-container{
-           display:flex;
-           justify-content: space-between;
            font-size:1.2em;
            font-size:3em;
            position:absolute;
-           margin-left:50px;
+           top:85vh;
        }
        
 /*       end of top container*/
@@ -83,35 +83,34 @@
 /*       bottom container*/
        
        .bottom-container{
-            background: white;
-            width:100%;
-            height:100vh;
+            background: floralwhite;
+            width:90%;
+            height:88vh;
             top:1000px;
-            padding-top:50px;
             position:absolute;
             color:rgb(61,60,60);
-           
        }
        
 /*       index numbers*/
        
        .number-container{
+           color:red;
             width:100%;
             display: flex;
             justify-content: center;
             position:absolute;
             font-weight:bold;
-            top:15vh;
+            top:3vh;
             z-index: 100;
        }
        
        .number-box{
-            width:150px;
+            width:200px;
             height:250px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size:6em;
+            font-size:7em;
        }
        
         .number-box:hover{
@@ -149,12 +148,12 @@
        
        .contents-container{
            width:100%;
-           height:60vh;
-           margin-top:40vh;
+           height:58vh;
+           margin-top:30vh;
            display: flex;
-           justify-content: center;
+           justify-content: left;
            position: absolute;
-           top:0;
+           padding-top: 3vh;
        }
        
        .one{
@@ -164,7 +163,8 @@
        
        .one.showme{
            opacity:1;
-           background:white;
+           background:rgb(61,60,60);
+           color:floralwhite;
            z-index: 1;
        }
        
@@ -175,7 +175,8 @@
        
        .two.showme{
            opacity:1;
-           background:white;
+           background:rgb(61,60,60);
+           color:floralwhite;
            z-index: 1;
        }
        
@@ -186,7 +187,8 @@
        
         .three.showme{
            opacity: 1;
-            background:white;
+            background:rgb(61,60,60);
+            color:floralwhite;
             z-index: 1;
        }
        
@@ -197,7 +199,8 @@
        
         .four.showme{
            opacity: 1;
-            background:white;
+            background:rgb(61,60,60);
+            color:floralwhite;
             z-index: 1;
        }
        
@@ -208,72 +211,74 @@
        
        .five.showme{
            opacity: 1;
-           background:white;
+           background:rgb(61,60,60);
+           color:floralwhite;
            z-index: 1;
        }
        
         .levelname{
            font-weight: bold;
-           font-size:1.9em;
+           font-size:3em;
            line-height: 1em;
-           margin-top:25.5px;
-           margin-left:-3px; 
+           margin-top:2vh;
+           margin-left:5%; 
+           position: absolute;
+           color:rgb(27,27,27);
+            text-decoration: underline;
        }
        
-       .line{
+       .title{
+           margin-left:35vw;
+           font-size:4em;
+           padding-right:10px;
+           hyphens: auto;
+       }
+       
+       .arrow{
+           transform: rotate(270deg);
            font-weight: bold;
-           font-size:1.9em;
+           font-size:7em;
+           margin-top:37vh;
+           margin-left:25vw; 
+           position: absolute;
+           color:rgb(27,27,27);
        }
        
-        .poem-container{
-            width:40%;
-            height:100%;
-            top:0;
-            margin-left:2%;
-            position:relative;
-            color:rgb(61,60,60);
-            overflow:scroll;
-            padding-top:25px;
-            font-size:1.8em;
-            padding-bottom: 2%;
-            line-height: 15px;
-       }
-       
-       .poem-container:hover{
-           line-height: normal;
-       }
-       
+
        .image-container{
-            width:40%;
-            height:100%;
-            top:0;
-            margin-left:2%;
-            position:relative;
+            width:100%;
+            height:60%;
+            top:11vh;
+            position:absolute;
             color:rgb(61,60,60);
             overflow:scroll;
             padding-top:25px;
+            padding-left:15%;
+            display:flex;
        }
        
        .photo{
-           width:100%;
-            padding-bottom:30px;
+           width:600px;
+           padding-right:10%;
            opacity:0.5;
        }
        
        .photo:hover{
-          opacity:1;
+          opacity:0.9;
        }
+    
        
 /*       end of bottom container*/
        
     </style>
   </head>
+  
   <body>
       <div class="body-container">
           <div class="top-container">
              <div class="header-container">
-                 <div class="leftheader">Brooke Page</div>
-                 <div class="rightheader">D-Pub</div>
+                 <div class="leftheader"><span class="uline">Brooke Page</span></div>
+                 <div class="rightheader"><span class="uline">D-Pub</span></div>
              </div><!-- end of header-container -->
              <div class="intro-container">
                  <p>"Used to be that if you wanted to be subversive and radical, you'd publish on the web, bypassing all those arcane publishing structures at no cost." <em>Kenneth Goldsmith, If It Doesn't Exist on the Internet, It Doesn't Exist.</em> This unit will reclaim the subversive, the radical and the handmade web. It will require you to consider the influence of media and technology on our lives and how publishing adapts to the new speed and the constant change. It considers the relationship between print and digital layout processes and will explore methods of design thinking for digital publishing, through the use of technology and concepts.</p>
@@ -282,10 +287,7 @@
           </div><!-- end of top-container -->
           
           <div class="bottom-container">
-             <div class="header-container">
-                 <div class="leftheader">Brooke Page</div>
-                 <div class="rightheader">D-Pub</div>
-             </div><!-- end of header-container -->
+            <div class="arrow">&#x21B1;</div>
              <div class="number-container">
                  <div class="number-box no1">1</div>
                  <div class="number-box no2">2</div>
@@ -296,9 +298,6 @@
              <!-- end of number-container -->
             
              <div class="contents-container one">
-                    <div class="line">___________</div>
-                    <div class="levelname">Level 1<br>only using<br><em>html</em> (no<em> css</em>)
-                    </div>
                     <div class="image-container">
                        <a href="level1a.html">
                            <figure>
@@ -316,13 +315,12 @@
                            </figure>
                         </a>
                     </div>
+                    <div class="levelname">Level 1<br>only using<br><em>html</em> (no<em> css</em>)
+                    </div>
               </div>
               <!-- end of contents-container one-->
               
                <div class="contents-container two">
-                    <div class="line">___________</div>
-                    <div class="levelname">Level 2<br>only using<br><em>html</em> (no<em> css</em>)
-                    </div>
                     <div class="image-container">
                         <a href="level2a.html">
                            <figure>
@@ -340,13 +338,12 @@
                            </figure>
                         </a>
                     </div>
+                    <div class="levelname">Level 2<br>only using<br><em>html</em> (no<em> css</em>)
+                    </div>
               </div>  
               <!-- end of contents-container two -->
               
                <div class="contents-container three">
-                    <div class="line">___________</div>
-                    <div class="levelname">Level 3<br>using both<br><em>html</em> and<em> css<br></em>elements for<br>positioning
-                    </div>
                     <div class="image-container">
                         <a href="level3a.html">
                            <figure>
@@ -364,13 +361,12 @@
                            </figure>
                         </a>
                     </div>
+                    <div class="levelname">Level 3<br>using both<br><em>html</em> and<em> css<br></em>elements for<br>positioning
+                    </div>
               </div>  
               <!-- end of contents-container three -->
               
               <div class="contents-container four">
-                    <div class="line">___________</div>
-                    <div class="levelname">Level 4<br>using both<br><em>html</em> or<em> css<br></em>elements for<br>typography
-                    </div>
                     <div class="image-container">
                         <a href="level4a.html">
                            <figure>
@@ -388,13 +384,12 @@
                            </figure>
                         </a>
                     </div>
+                    <div class="levelname">Level 4<br>using both<br><em>html</em> or<em> css<br></em>elements for<br>typography
+                    </div>
               </div>  
               <!-- end of contents-container four -->
               
               <div class="contents-container five">
-                    <div class="line">___________</div>
-                    <div class="levelname">Level 5<br>using any<br><em>html</em> or<em> css<br></em>element
-                    </div>
                     <div class="image-container">
                         <a href="level5a.html">
                            <figure>
@@ -412,16 +407,14 @@
                            </figure>
                         </a>
                     </div>
+                    <div class="levelname">Level 5<br>using any<br><em>html</em> or<em> css<br></em>element
+                    </div>
               </div>  
               <!-- end of contents-container five -->
               
               <div class="contents-container">
-                    <div class="line">___________</div>
-                    <div class="levelname">Manifesto:<br>Joseph Beuys<br><em>Everyone Is<br>
+                    <div class="levelname title">15 Variations:<br>Joseph Beuys<br><em>Everyone Is<br>
                     An Artist</em>
-                    </div>
-                    <div class="poem-container">
-                       <p>Let yourself fall. Learn to observe snails. Plant impossible gardens. Let someone dangerous in for tea. Make small signs that say “yes” and spread them all over your house. Become a friend of freedom and uncertainty. Look forward to dreaming. Cry at the movies. Swing as high as you can on a swing at moonlight. Maintain different moods. Refuse to be “responsible”. Do it out of love. Pass on money. Do it now. The money will follow. Laugh a lot. Bathe in the moonlight. Dream wild, imaginative dreams. Draw on the walls. Read every day. Imagine you are enchanted. Giggle with children. Listen to old people. Open yourself. Dive in. Be free. Praise Yourself. Let go of fear. Play with everything. Preserve the child in you. You are innocent. Build a castle of covers. Get wet. Hug trees. Write love letters.</p>
                     </div>
               </div>
               <!-- end of contents-container -->
