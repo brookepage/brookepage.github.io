@@ -4,10 +4,6 @@
 
 /* Start here */
 
-/*cream EAE0BE*/
-/*blue 242A5F*/
-/*red EE3231*/
-
 body {
     background-color: #EAE0BE;
     font-family: 'Raleway', sans-serif;
@@ -21,7 +17,9 @@ body {
     align-items: center; 
 }
 
+/*-----------------*/
 /*phase 1*/
+/*-----------------*/
 
 .phase1-container{
     width:93vw;
@@ -43,7 +41,9 @@ body {
     text-align: center;
 }
 
+/*-----------------*/
 /*phase 2*/
+/*-----------------*/
 
 .phase2-container{
     width:93vw;
@@ -76,7 +76,9 @@ body {
     transform: translateY(100vh);
 }
 
+/*-----------------*/
 /*phase 3*/
+/*-----------------*/
 
 .phase3-container{
     width:93vw;
@@ -104,7 +106,9 @@ body {
     transform: translateY(-100vh);
 }
 
+/*-----------------*/
 /*phase 4*/
+/*-----------------*/
 
 .phase4-container{
     width:93vw;
@@ -145,7 +149,9 @@ body {
     left:0;
 }
 
+/*-----------------*/
 /*phase 5*/
+/*-----------------*/
 
 .phase5-container{
     width:93vw;
@@ -194,7 +200,9 @@ body {
    color: #242A5F; 
 }
 
+/*-----------------*/
 /*phase 6*/
+/*-----------------*/
 
 .phase6-container{
     width:93vw;
@@ -241,7 +249,9 @@ body {
     font-size:9em;
 }
 
+/*-----------------*/
 /*animation classes*/
+/*-----------------*/
 
 .circle_ani{
     animation-name:circleScale;
@@ -344,7 +354,9 @@ body {
     animation-iteration-count: infinite;
 }
 
+/*-----------------*/
 /*animations*/
+/*-----------------*/
 
 @keyframes circleScale{
     0% {transform: scale(0);}
@@ -421,11 +433,5 @@ body {
     from {color:#EE3231;}
     to {color:#242A5F;}
 }
-
-/*
-    0% {transform: translateY(100vh);}
-    60% {transform: translateY(100vh);}
-    100% {transform: translateY(0);}
-*/
 
 
