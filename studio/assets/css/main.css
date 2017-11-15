@@ -35,7 +35,12 @@ button {
     border-color: none;
     border-image: none;
 }
-svg {
+
+.move {
+    top:-15px;
+}
+
+.sound_icon {
     background-color: transparent;
     width:100px;
     height: 100px;
@@ -50,7 +55,8 @@ img {
 }
 
 .play {
-  animation: jiggle 0.5s infinite ease-out; 
+  animation: jiggle 1s infinite ease-in-out;
+  animation-direction: alternate-reverse;
 }
 
 /* ---------------------------- */
@@ -59,10 +65,10 @@ img {
 
 @keyframes jiggle {
     to{
-        transform: translateY(0)
+        transform: scale(1)
     }
     from{
-        transform: translateY(5px)
+        transform: scale(1.2)
     }
 }
 
