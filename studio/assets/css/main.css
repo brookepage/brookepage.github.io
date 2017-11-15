@@ -40,8 +40,16 @@ button {
     top:-15px;
 }
 
-.move_down {
+.move_down_shower {
+    top:10px;
+}
+
+.move_down_tea {
     top:85px;
+}
+
+.move_down_cooking {
+    top:115px;
 }
 
 .sound_icon {
