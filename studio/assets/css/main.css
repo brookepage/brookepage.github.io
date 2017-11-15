@@ -40,6 +40,10 @@ button {
     top:-15px;
 }
 
+.move_down {
+    top:85px;
+}
+
 .sound_icon {
     background-color: transparent;
     width:100px;
@@ -68,7 +72,7 @@ img {
         transform: scale(1)
     }
     from{
-        transform: scale(1.2)
+        transform: scale(1.3)
     }
 }
 
