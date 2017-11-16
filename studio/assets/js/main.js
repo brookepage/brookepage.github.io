@@ -62,7 +62,7 @@ $(document).ready(function() {
 //    ----------- book -----------   //
     
         var bookSound = document.createElement('audio');
-        bookSound.setAttribute('src', '/assets/sounds/book.mp3');
+        bookSound.setAttribute('src', 'assets/sounds/book.mp3');
         $.get();
         bookSound.addEventListener("load", function() {
           bookSound.play();
