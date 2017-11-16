@@ -7,7 +7,7 @@ $(document).ready(function() {
 //    ----------- shower -----------   //
 
         var showerSound = document.createElement('audio');
-        showerSound.setAttribute('src', '/studio/sounds/shower.mp3');
+        showerSound.setAttribute('src', '/studio/assets/sounds/shower.mp3');
         $.get();
         showerSound.addEventListener("load", function() {
           showerSound.play();
@@ -35,7 +35,7 @@ $(document).ready(function() {
 //    ----------- tea -----------   //
     
         var teaSound = document.createElement('audio');
-        teaSound.setAttribute('src', '/studio/sounds/tea.mp3');
+        teaSound.setAttribute('src', '/studio/assets/sounds/tea.mp3');
         $.get();
         teaSound.addEventListener("load", function() {
           teaSound.play();
@@ -62,7 +62,7 @@ $(document).ready(function() {
 //    ----------- book -----------   //
     
         var bookSound = document.createElement('audio');
-        bookSound.setAttribute('src', '/studio/sounds/book.mp3');
+        bookSound.setAttribute('src', '/studio/assets/sounds/book.mp3');
         $.get();
         bookSound.addEventListener("load", function() {
           bookSound.play();
@@ -119,7 +119,7 @@ $(document).ready(function() {
 //    ----------- sleeping -----------   //
     
         var sleepingSound = document.createElement('audio');
-        sleepingSound.setAttribute('src', '/studio/sounds/sleeping.mp3');
+        sleepingSound.setAttribute('src', '/studio/assets/sounds/sleeping.mp3');
         $.get();
         sleepingSound.addEventListener("load", function() {
           sleepingSound.play();
