@@ -7,7 +7,7 @@ $(document).ready(function() {
 //    ----------- shower -----------   //
 
         var showerSound = document.createElement('audio');
-        showerSound.setAttribute('src', '/studio//sounds/shower.wav');
+        showerSound.setAttribute('src', '/studio/sounds/shower.mp3');
         $.get();
         showerSound.addEventListener("load", function() {
           showerSound.play();
@@ -35,7 +35,7 @@ $(document).ready(function() {
 //    ----------- tea -----------   //
     
         var teaSound = document.createElement('audio');
-        teaSound.setAttribute('src', '/studio//sounds/tea.wav');
+        teaSound.setAttribute('src', '/studio/sounds/tea.mp3');
         $.get();
         teaSound.addEventListener("load", function() {
           teaSound.play();
@@ -62,7 +62,7 @@ $(document).ready(function() {
 //    ----------- book -----------   //
     
         var bookSound = document.createElement('audio');
-        bookSound.setAttribute('src', '/studio//mp3/book.mp3');
+        bookSound.setAttribute('src', '/studio/sounds/book.mp3');
         $.get();
         bookSound.addEventListener("load", function() {
           bookSound.play();
@@ -90,7 +90,7 @@ $(document).ready(function() {
 //    ----------- cooking -----------   //
     
         var cookingSound = document.createElement('audio');
-        cookingSound.setAttribute('src', 'studio/assets/sounds/cooking.wav');
+        cookingSound.setAttribute('src', 'studio/assets/sounds/cooking.mp3');
         $.get();
         cookingSound.addEventListener("load", function() {
           cookingSound.play();
@@ -119,7 +119,7 @@ $(document).ready(function() {
 //    ----------- sleeping -----------   //
     
         var sleepingSound = document.createElement('audio');
-        sleepingSound.setAttribute('src', '/studio//sounds/sleeping.wav');
+        sleepingSound.setAttribute('src', '/studio/sounds/sleeping.mp3');
         $.get();
         sleepingSound.addEventListener("load", function() {
           sleepingSound.play();
@@ -143,14 +143,6 @@ $(document).ready(function() {
             }    
         });
     
-
-
-
-
-
-
-
-
 
 
 
