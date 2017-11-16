@@ -90,7 +90,7 @@ $(document).ready(function() {
 //    ----------- cooking -----------   //
     
         var cookingSound = document.createElement('audio');
-        cookingSound.setAttribute('src', 'studio/assets/sounds/cooking.mp3');
+        cookingSound.setAttribute('src', '/studio/assets/sounds/cooking.mp3');
         $.get();
         cookingSound.addEventListener("load", function() {
           cookingSound.play();
