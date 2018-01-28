@@ -15,6 +15,10 @@
           font-size:1.4em;
       } 
       
+      .about{
+        margin-top:7vh;
+      }
+      
       .middle-container{
           height:30vh;
           font-size: 1.4em;
@@ -57,13 +61,7 @@
       }
       
       .scrollToTop{
-          width:150px;
-          height:150px;
-          margin-top:-16vh;
-          padding-top:35px;
-          z-index:5;
-          font-size:2.5em;
-          right:-10vw;
+          display:none;
       }
 }
 
