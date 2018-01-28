@@ -12,9 +12,6 @@ $('.nav_all').click(function(event) {
     
   $('.item').removeClass('hide');
   $('.item').addClass('show');
-    
-    $('.item').removeClass('full');  
-  $('.item').addClass('thumbnail');
 });
 
 $('.nav_ux').click(function(event) {
@@ -29,9 +26,6 @@ $('.nav_ux').click(function(event) {
 
   $('.item.ux').removeClass('hide');
   $('.item.ux').addClass('show');
-    
-    $('.item').removeClass('thumbnail'); 
-  $('.item').addClass('full');
 });
 
 $('.nav_digital').click(function(event) {
@@ -46,9 +40,6 @@ $('.nav_digital').click(function(event) {
 
   $('.item.digital').removeClass('hide');
   $('.item.digital').addClass('show');
-    
-    $('.item').removeClass('thumbnail'); 
-  $('.item').addClass('full');
 });
 
 $('.nav_print').click(function(event) {
@@ -63,27 +54,6 @@ $('.nav_print').click(function(event) {
 
   $('.item.print').removeClass('hide');
   $('.item.print').addClass('show');
-    
-    $('.item').removeClass('thumbnail'); 
-  $('.item').addClass('full');
-});
-    
-
-    
-//    Sizing
-    
-$('.nav_thumbnail').click(function(event){
-  $('.item').removeClass('col1of2');  
-  $('.item').addClass('col1of4');
-});
-    
-$('.nav_full').click(function(event){
-  $('.item').removeClass('thumbnail');  
-  $('.item').addClass('full');
-});
-
-$('.nav_middle').click(function(event){
-  $('.item').removeClass('thumbnail full');
 });
 
 
@@ -97,7 +67,11 @@ $(".pic").hover(
 });
 
 
-
+//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
 
 
 

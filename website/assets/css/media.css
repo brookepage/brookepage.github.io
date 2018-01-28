@@ -8,41 +8,62 @@
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+      
       .top-container{
-          height:60vh;
+          height:70vh;
           padding:10vw;
-          padding-top:5vh;
-          font-size:1.25em;
-      }  
+          font-size:1.3em;
+      } 
+      
       .middle-container{
           height:30vh;
-          font-size: 1.5em;
-          padding:10vw;
-      }
-      .heading{
-          bottom:5vh;
-          font-weight:400;
-      }
-      .nav-container{
-          height:10vh;
-          font-size:2.2em;
-          font-weight:400;
-          padding-top:4vh;
-      }
-      .col1of4{
-          flex: 0 0 100%;
-      }
-      .item.full{
-          flex: 0 0 100%;
-      }
-     .item.thumbnail{
-          flex: 0 0 100%;
-      }
-      .footer-container{
-          height:8vh;
-          padding:3vh;
+          font-size: 1.3em;
           padding-left:10vw;
-          font-size: 1.5em;
+          
+      }
+      
+      .heading{
+          bottom:7vh;
+          font-weight:400;
+      }
+      
+      .line{
+        font-size: 0.4em;
+        }
+      
+      .nav-band{
+          display:none;
+      }
+      
+      .nav-container{
+          height:15vh;
+          font-size:2.3em;
+          font-weight:400;
+          padding-top:8vh;
+      }
+      
+      .selected{
+          border-bottom:2px solid whitesmoke;
+      }
+      
+      .col1of2{
+          flex: 0 0 100%;
+      }
+      
+      .footer-container{
+          height:12vh;
+          padding-left:10vw;
+          font-size: 1.9em;
+      }
+      
+      .scrollToTop{
+          width:150px;
+          height:150px;
+          margin-top:-15vh;
+          padding-top:24px;
+          z-index:5;
+          font-size:3em;
+          right:-10vw;
       }
 }
 
