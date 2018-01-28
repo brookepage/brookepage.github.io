@@ -67,14 +67,18 @@ $(".pic").hover(
 });
 
 
-//Click event to scroll to top
-	$('.scrollToTop').click(function(){
+//Click event to scroll buttons
+    
+$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
-	});
+});
 
+$('.scrollDown').click(function(){
+		$('html, body').animate({scrollTop : $('#down').offset().top},800);
+		return false;
 
-
+});
 
 
 

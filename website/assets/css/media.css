@@ -10,44 +10,39 @@
   and (-webkit-min-device-pixel-ratio: 2) { 
       
       .top-container{
-          height:70vh;
-          padding:10vw;
-          font-size:1.4em;
+          height:60vh;
+          font-size:1.2em;
       } 
-      
-      .about{
-        margin-top:7vh;
-      }
       
       .middle-container{
           height:30vh;
           font-size: 1.4em;
           padding-left:10vw;
+          font-size:1.2em;
           
       }
       
-      .heading{
-          bottom:7vh;
-          font-weight:400;
-      }
-      
       .line{
-        font-size: 0.3em;
+        font-size: 0.25em;
         }
       
-      .nav-band{
-          display:none;
-      }
       
       .nav-container{
-          height:15vh;
-          font-size:2.3em;
-          font-weight:400;
-          padding-top:8vh;
+          font-size:2em;
+      }
+      
+      .nav-text{
+          font-weight:500;
       }
       
       .selected{
-          border-bottom:2px solid whitesmoke;
+          border-bottom:2.5px solid #1d1d1d;
+      }
+      
+      .scrollDown{
+          width:100px;
+          height:100px;
+          margin-top:-2vh;
       }
       
       .col1of2{
@@ -56,12 +51,14 @@
       
       .footer-container{
           height:12vh;
-          padding-left:10vw;
-          font-size: 1.9em;
+          padding-left:5vw;
+          font-size: 1.8em;
       }
       
       .scrollToTop{
-          display:none;
+          width:100px;
+          height:100px;
+          margin-top:-2vh;
       }
 }
 
@@ -73,36 +70,6 @@
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
       
-    
-      .top-container{
-          height:50vh;
-          padding:10vw;
-          padding-top:10vh;
-      }  
-      .middle-container{
-          height:40vh;
-          font-size: 1.3em;
-          padding:10vw;
-      }
-      .heading{
-          bottom:5vh;
-      }
-      .nav-container{
-          height:5vh;
-      }
-      .col1of4{
-          flex: 0 0 50%;
-      }
-      .item.full{
-          flex: 0 0 100%;
-      }
-     .item.thumbnail{
-          flex: 0 0 50%;
-      }
-      .footer-container{
-          height:5vh;
-          padding:2vh;
-      }
 
 }
 
