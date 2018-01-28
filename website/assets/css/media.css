@@ -12,12 +12,12 @@
       .top-container{
           height:70vh;
           padding:10vw;
-          font-size:1.3em;
+          font-size:1.4em;
       } 
       
       .middle-container{
           height:30vh;
-          font-size: 1.3em;
+          font-size: 1.4em;
           padding-left:10vw;
           
       }
@@ -28,7 +28,7 @@
       }
       
       .line{
-        font-size: 0.4em;
+        font-size: 0.3em;
         }
       
       .nav-band{
@@ -59,10 +59,10 @@
       .scrollToTop{
           width:150px;
           height:150px;
-          margin-top:-15vh;
-          padding-top:24px;
+          margin-top:-16vh;
+          padding-top:35px;
           z-index:5;
-          font-size:3em;
+          font-size:2.5em;
           right:-10vw;
       }
 }
