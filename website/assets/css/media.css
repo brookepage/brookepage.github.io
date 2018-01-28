@@ -29,17 +29,18 @@
           padding-top:3vh;
       }
       .col1of4{
-          flex: 0 0 50%;
+          flex: 0 0 100%;
       }
       .item.full{
           flex: 0 0 100%;
       }
      .item.thumbnail{
-          flex: 0 0 50%;
+          flex: 0 0 100%;
       }
       .footer-container{
-          height:5vh;
+          height:7vh;
           padding:2vh;
+          font-size: 1.3em;
       }
 }
 
